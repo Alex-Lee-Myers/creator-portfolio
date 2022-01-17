@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutMeSection from '../components/AboutMeSection';
-import FaqSection from '../components/FaqSection';
 import ServicesSection from '../components/ServicesSection';
+import FaqSection from '../components/FaqSection';
 
 class AboutUs extends React.Component {
     render(){

@@ -1,20 +1,38 @@
 import React from 'react';
 
-class FaqSections extends React.Component {
+class FaqSection extends React.Component {
 
     public render() {
         return (
-            <div className="faq-sections">
-                <div className="faq-sections__text-container">
-                    {/* <h2>{this.props.title}</h2>
-                    <p>{this.props.description}</p> */}
-                </div>
-                <div className="faq-sections__image-container">
-                    {/* <img src={this.props.image} alt=""/> */}
-                </div>
+            <div className="faq">
+                <h2>Any Questions <span>FAQ</span></h2>
+                    <div className="question">
+                        <h4>How Do I Start?</h4>
+                        <div className="answer"></div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis dolores unde consectetur maiores accusantium. Voluptates optio dolorum eum neque.
+                            </p>
+                    </div>
+                    <div className="question">
+                        <h4>Different Payment Methods</h4>
+                        <div className="answer"></div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis dolores unde consectetur maiores accusantium. Voluptates optio dolorum eum neque.
+                            </p>
+                    </div>
+                    <div className="question">
+                        <h4>What Products Do You Offer?</h4>
+                        <div className="answer"></div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam reiciendis dolores unde consectetur maiores accusantium. Voluptates optio dolorum eum neque.
+                            </p>
+                    </div>
             </div>
         );
     }
 }
 
-export default FaqSections;
+export default FaqSection;
