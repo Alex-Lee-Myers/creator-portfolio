@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import AboutUs from './pages/AboutUs';
 
 const App: React.FunctionComponent = () => {
