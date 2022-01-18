@@ -44,7 +44,7 @@ button{
     }
     h4{
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 2.25rem;
 
     }
     a{
@@ -52,7 +52,7 @@ button{
     }
     span{
         font-weight: bold;
-        color:#23d997;
+        color: #23d997;
     }
     p{
         padding: 3rem 0rem;
