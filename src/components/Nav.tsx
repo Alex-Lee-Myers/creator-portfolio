@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 class Nav extends React.Component {
 
-
     public render() {
         return (
             <StyledNav>
@@ -13,10 +12,10 @@ class Nav extends React.Component {
                         <Link to="/">1. About Us</Link>
                     </li>
                     <li>
-                        <Link to="/our-work">2. Our Work</Link>
+                        <Link to="/work">2. Our Work</Link>
                     </li>
                     <li>
-                        <Link to="/contact-us">3. Contact Us</Link>
+                        <Link to="/contact">3. Contact Us</Link>
                     </li>
                 </ul>
             </StyledNav>
