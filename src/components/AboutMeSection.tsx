@@ -1,7 +1,8 @@
 import React from "react";
 import home1 from '../img/home1.png';
 // Styled Components Import
-import styled from 'styled-components';
+// import styled from 'styled-components';
+import {StyledLayout, StyledDescription, StyledImage, StyledHide} from '../styles';
 
 class AboutMeSection extends React.Component{
 
@@ -9,88 +10,40 @@ class AboutMeSection extends React.Component{
 //! Render UI
 public render() {
     return (
-            <StyledAbout>
-                <Description>
+            <StyledLayout>
+                <StyledDescription>
                     <div className="title">
-                        <Hide>
+                        <StyledHide>
                             <h2>
                                 We work to make
                             </h2>
-                        </Hide>
-                        <Hide>
+                        </StyledHide>
+                        <StyledHide>
                             <h2>
                             your <span>dreams</span> come
                             </h2>
-                        </Hide>
-                        <Hide>
+                        </StyledHide>
+                        <StyledHide>
                             <h2>true.</h2>
-                        </Hide>
+                        </StyledHide>
                         <div className="about-me-section__text-container">
                             <p>
                             Contact us for any photography or videography ideas that you
-                            have. We have professionals with amazing skills.
+                            have. We have professionals with amazing skillStyled
                             </p>
                             <button>Contact Us</button>
                         </div>
                         
                     </div>
-                </Description>
-                <Image>
+                </StyledDescription>
+                <StyledImage>
                             <img src={home1} alt="guy with a camera"/>
-                    </Image>
-            </StyledAbout>
+                    </StyledImage>
+            </StyledLayout>
         );
     }
 }
 
-//! Styled Components
-const StyledAbout = styled.div`
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 10rem;
-    color: white;
 
-    @media (max-width: 1300px) {
-    display: block;
-    padding: 2rem 2rem;
-    text-align: center;
-    }
-`;
-
-
-const Description = styled.div`
-    flex: 1;
-    padding-right: 5rem;
-    z-index: 2;
-
-    h2 {
-        font-weight: lighter;
-    }
-
-    @media (max-width: 1300px) {
-        padding: 0;
-            button {
-                margin: 2rem 0rem 5rem 0rem;
-        }
-    }
-`;
-
-const Image = styled.div`
-    z-index: 2;
-    flex: 1;
-    overflow: hidden;
-
-    img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    }
-`;
-
-const Hide = styled.div`
-    overflow: hidden;
-`;
 
 export default AboutMeSection;
